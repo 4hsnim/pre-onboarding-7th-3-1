@@ -1,11 +1,15 @@
 import Router from "./Router";
 import GlobalStyle from "./styles/GlobalStyle";
+import { store } from "./store/store";
+import { Provider } from "react";
 
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <Router />
+      <Provider store={store}>
+        <GlobalStyle />
+        <Router />
+      </Provider>
     </>
   );
 }
