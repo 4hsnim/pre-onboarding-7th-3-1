@@ -17,6 +17,14 @@ import SerachInput from "./SerachInput";
 import SearchButton from "./SearchButton";
 import TestInfoContatiner from "./TestInfoContatiner";
 import TestInfoTitle from "./TestInfoTitle";
+import SearchForm from "./SearchForm";
+import SearchFormTitle from "./SearchFormTitle";
+import KeywordWrapper from "./KeywordWrapper";
+import KeywordBody from "./KeywordBody";
+import SuggestWordContainer from "./SuggestWordContainer";
+import SuggestWord from "./SuggestWord";
+import SuggestWordWrapper from "./SuggestWordWrapper";
+import NoRecentKeyword from "./NoRecentKeyword";
 
 const Atoms = {
   Container,
@@ -38,6 +46,14 @@ const Atoms = {
   SearchButton,
   TestInfoContatiner,
   TestInfoTitle,
+  SearchForm,
+  SearchFormTitle,
+  KeywordWrapper,
+  KeywordBody,
+  SuggestWordContainer,
+  SuggestWord,
+  SuggestWordWrapper,
+  NoRecentKeyword,
 };
 
 export default Atoms;

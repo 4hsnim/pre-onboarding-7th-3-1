@@ -1,11 +1,11 @@
 import Atoms from "../atoms";
+import Molecules from "../molecules";
 import research1 from "../../assets/research1.svg";
 import research2 from "../../assets/research2.svg";
 import research3 from "../../assets/research3.svg";
-import search1 from "../../assets/search1.svg";
-import search2 from "../../assets/search2.svg";
+import search from "../../assets/search1.svg";
 
-const Search = () => {
+const Main = () => {
   return (
     <Atoms.SearchContainer>
       <Atoms.SearchTitle>
@@ -15,13 +15,21 @@ const Search = () => {
       </Atoms.SearchTitle>
       <Atoms.SearchBottomContainer>
         <Atoms.ResearchSvg1 src={research1} />
-        <Atoms.SerchInputContainer>
-          <Atoms.SearchSvg1 src={search1} />
-          <Atoms.SerachInput placeholder="질환명을 입력해 주세요." />
-          <Atoms.SearchButton>
-            <Atoms.SearchSvg2 src={search2} />
-          </Atoms.SearchButton>
-        </Atoms.SerchInputContainer>
+        <div>
+          <Molecules.Search />
+          <Atoms.SearchForm>
+            <Atoms.SearchFormTitle>최근검색어</Atoms.SearchFormTitle>
+            <Molecules.RecentKeyword />
+
+            <Atoms.SuggestWordContainer>
+              <Atoms.SearchFormTitle>
+                추천 검색어로 검색하세요.
+              </Atoms.SearchFormTitle>
+              <Molecules.SuggestWord />
+            </Atoms.SuggestWordContainer>
+          </Atoms.SearchForm>
+        </div>
+
         <Atoms.ResearchSvg2 src={research2} />
         <Atoms.ResearchSvg3 src={research3} />
       </Atoms.SearchBottomContainer>
@@ -29,4 +37,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default Main;

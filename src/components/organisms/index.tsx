@@ -1,10 +1,10 @@
 import Nav from "./Nav";
-import Search from "./Search";
+import Main from "./Main";
 import Test from "./Test";
 
 const Organisms = {
   Nav,
-  Search,
+  Main,
   Test,
 };
 

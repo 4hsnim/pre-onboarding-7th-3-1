@@ -5,7 +5,7 @@ const Template = () => {
   return (
     <Atoms.Container>
       <Organisms.Nav />
-      <Organisms.Search />
+      <Organisms.Main />
       <Organisms.Test />
     </Atoms.Container>
   );
