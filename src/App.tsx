@@ -1,15 +1,15 @@
 import Router from "./Router";
 import GlobalStyle from "./styles/GlobalStyle";
-import { store } from "./store/store";
+import { store } from "./redux/store";
 import { Provider } from "react";
 
 function App() {
   return (
     <>
-      <Provider store={store}>
-        <GlobalStyle />
-        <Router />
-      </Provider>
+      {/* <Provider store={store}> */}
+      <GlobalStyle />
+      <Router />
+      {/* </Provider> */}
     </>
   );
 }
