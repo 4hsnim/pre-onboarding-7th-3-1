@@ -1,4 +1,4 @@
 export interface CacheData {
-  expired: Date;
+  //   expired: Date;
   data: string[];
 }

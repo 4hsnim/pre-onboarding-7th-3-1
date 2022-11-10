@@ -2,12 +2,10 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "../store";
 
-interface CacheState {
-  value: string[];
-}
+import { CacheData } from "../../types/cache";
 
-const initialState: CacheState = {
-  value: [],
+const initialState: CacheData = {
+  data: [],
 };
 
 export const cahceSlice = createSlice({
@@ -15,7 +13,7 @@ export const cahceSlice = createSlice({
   initialState,
   reducers: {
     add: (state, action: PayloadAction<string>) => {
-      return { value: state.value.concat(action.payload) };
+      return { data: state.data.concat(action.payload) };
     },
   },
 });
