@@ -1,9 +1,11 @@
 import Atoms from "../atoms";
 import search1 from "../../assets/search1.svg";
 import search2 from "../../assets/search2.svg";
-import React from "react";
+import React, { useState } from "react";
 
 const Search = () => {
+  const [enteredInput, setEnteredInput] = useState<string>("");
+
   const onKeyPress = (
     ChangeEvent: React.ChangeEvent<HTMLInputElement>,
     KeyEvent: React.KeyboardEvent<HTMLInputElement>

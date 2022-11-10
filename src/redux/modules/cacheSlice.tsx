@@ -13,7 +13,7 @@ export const cahceSlice = createSlice({
   initialState,
   reducers: {
     add: (state, action: PayloadAction<string>) => {
-      return { data: state.data.concat(action.payload) };
+      return { data: [...state.data, action.payload] };
     },
   },
 });
