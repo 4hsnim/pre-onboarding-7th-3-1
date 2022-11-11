@@ -3,9 +3,10 @@ import Molecules from "../molecules";
 import research1 from "../../assets/research1.svg";
 import research2 from "../../assets/research2.svg";
 import research3 from "../../assets/research3.svg";
-import search from "../../assets/search1.svg";
+import Cache from "../../utils/cache/sessionStorage";
 
 const Main = () => {
+  const getCacheData = JSON.parse(Cache.get() as string)
   return (
     <Atoms.SearchContainer>
       <Atoms.SearchTitle>

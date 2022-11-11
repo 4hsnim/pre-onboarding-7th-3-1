@@ -15,3 +15,5 @@ export class Cache {
     sessionStorage.removeItem(this.#CACHE_KEY);
   }
 }
+
+export default new Cache()
